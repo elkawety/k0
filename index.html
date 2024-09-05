@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Curtain Control</title>
+  <!-- ربط ملف CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Smart Curtain Control</h1>
+<div class="text-3d">elkawety</div>
+
+  <!-- حقول إدخال اسم الشبكة وكلمة المرور -->
+  <div class="wifi-settings">
+    <input type="text" id="ssid" placeholder="Enter WiFi SSID" />
+    <input type="password" id="password" placeholder="Enter WiFi Password" />
+    <button onclick="saveWifiSettings()">Save WiFi Settings</button>
+  </div>
+
+  <!-- أزرار التحكم في الستارة -->
+  <button onclick="sendCommand('open')">Open Curtain</button>
+  <button onclick="sendCommand('close')">Close Curtain</button>
+  <button onclick="sendCommand('stop')">Stop Curtain</button>
+
+  <!-- ربط ملف JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
